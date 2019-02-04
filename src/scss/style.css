@@ -1,5 +1,26 @@
-.colorize {
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+.textize {
   background: royalblue;
   color: ghostwhite;
+  text-align: center;
+}
+
+.textize {
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.textify {
+  background: royalblue;
+  color: #c8c802;
+  padding: 5px;
+  margin-top: 2px;
+  border-radius: 5px;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

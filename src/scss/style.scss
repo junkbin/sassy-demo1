@@ -1,6 +1,24 @@
 @import 'variable';
+@import 'util';
+@import 'mixin';
 
-.colorize {
+%common {
     background: $primary;
     color : $text-light;
+    text-align: center;
+}
+
+// Inheritance :: Extend
+.textize {
+    @extend %common;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.textify {
+    @include dynamic-textify($primary, rgba(200, 200, 2, 1));
+    padding: 5px;
+    margin-top : 2px;
+    border-radius: 5px;
+    font-size: 2rem;
 }
