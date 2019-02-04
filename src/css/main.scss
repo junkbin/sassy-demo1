@@ -1,5 +1,26 @@
+html, body {
+    height: 100%;
+    margin:0;
+}
+
+$font-face : monospace; 
+$primary-color : royalblue;
+$secondary-color: ghostwhite;
+
+.full-page {
+    height: 100vh;
+}
+
 .make-center{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.textify {
+    background:  $primary-color;
+    color : $secondary-color;
+    font-weight: bolder;
+    font-size: 4rem;
+    font-family: $font-face;
 }

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev" : "lite-server",
     "sassy": "sass --watch ./src/css:./src/css/public",
     "sassy-1": "sass --watch ./src/css/main.scss:./src/css/main.css"
   },
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "lite-server": "^2.4.0",
     "sass": "^1.16.1"
   }
 }
