@@ -6,6 +6,7 @@ html, body {
 $font-face : monospace; 
 $primary-color : royalblue;
 $secondary-color: ghostwhite;
+$accent-color : rgb(223, 113, 132);
 
 .full-page {
     height: 100vh;
@@ -23,4 +24,14 @@ $secondary-color: ghostwhite;
     font-weight: bolder;
     font-size: 4rem;
     font-family: $font-face;
+}
+
+
+.container {
+    .row {
+        background: $accent-color;
+        color : $secondary-color;
+        font-family: cursive;
+        font-size: 2rem;
+    }
 }

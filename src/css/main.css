@@ -26,4 +26,11 @@ html, body {
   font-size: 4rem;
   font-family: monospace;
 }
+
+.container .row {
+  background: #df7184;
+  color: ghostwhite;
+  font-family: cursive;
+  font-size: 2rem;
+}
 /*# sourceMappingURL=main.css.map */
