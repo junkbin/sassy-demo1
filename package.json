@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sassy": "sass --watch ./src/css/main.scss:./src/css/main.css"
+    "sassy": "sass --watch ./src/css:./src/css/public",
+    "sassy-1": "sass --watch ./src/css/main.scss:./src/css/main.css"
   },
   "keywords": [],
   "author": "",
