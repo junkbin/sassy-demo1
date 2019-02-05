@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+div.test {
+  background: tomato;
+  color: white;
+  padding: 5px;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
