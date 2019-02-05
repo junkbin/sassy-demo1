@@ -7,10 +7,32 @@ body {
 $bg-primary : tomato;
 $text-primary : white;
 
+@keyframes marquee {
+    0% {
+        transform: translate(0,0)
+    };
+
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+
 div.test {
     background: $bg-primary;
     color : $text-primary;
+}
 
-    padding: 5px;
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+.mitem {
+    display: inline-block;
+    background: lighten(tomato, 10%);
+    padding: 10px !important;
     font-size: 2rem;
 }
