@@ -1,0 +1,45 @@
+@keyframes aframe {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.acontainer {
+    margin-top:1px;
+
+    width: 100%;
+    background: $primary;
+    padding-left: 100%;
+
+    border-radius: 5px;
+}
+
+.awrap {
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-name: aframe;
+    animation-timing-function: linear;
+
+    display: inline-block;
+    white-space: nowrap;
+    
+}
+
+.aitem {
+    
+    padding: 1rem !important;
+    @extend .textify;
+    
+
+    background: lighten($primary, 5) !important;
+
+
+    display: inline-block;
+    white-space: nowrap;
+
+    margin: 0px !important;
+}

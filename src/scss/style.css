@@ -4,6 +4,58 @@ body {
   margin: 0px;
 }
 
+@-webkit-keyframes aframe {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes aframe {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.acontainer {
+  margin-top: 1px;
+  width: 100%;
+  background: royalblue;
+  padding-left: 100%;
+  border-radius: 5px;
+}
+
+.awrap {
+  padding-right: 100%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-name: aframe;
+          animation-name: aframe;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.aitem {
+  padding: 1rem !important;
+  background: #577ae4 !important;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0px !important;
+}
+
 .textize {
   background: royalblue;
   color: ghostwhite;
@@ -15,7 +67,7 @@ body {
   padding: 5px;
 }
 
-.textify, .textifi {
+.textify, .aitem, .textifi {
   background: royalblue;
   color: #e6dc02;
   padding: 5px;
